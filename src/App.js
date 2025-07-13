@@ -1,9 +1,13 @@
 import './App.css';
+import Navbar from './Navbar/Navbar';
+import Hero from './Hero/Hero';
 
 function App() {
   return (
     <div className="App">
-      <h1>Enit's Barber Shop</h1>
+      <Navbar />
+      <Hero />
+
     </div>
   );
 }
