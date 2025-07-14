@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+.brands-section {
+  padding: 80px 8%;
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.brands-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: "Abril Fatface";
+}
+
+.brands-desc {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.divider {
+  width: 2px;
+  height: 320px;
+  background-color: #0055ff;
+}
+
+.brands-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.brands-right img {
+  max-height: 120px;
+  margin-top: -20px;
+}
+
+.brands-right .pic1{
+    max-height: 200px;
+}
+
+.brand-label {
+  text-align: center;
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 8px;
+}

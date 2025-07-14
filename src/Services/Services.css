@@ -1,0 +1,93 @@
+
+.services-section {
+  background-image: url("../Fotot/Services\ bcg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 8%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* për të errësuar sfondin */
+  backdrop-filter: blur(8px); /* efekti i mjegullës */
+  z-index: -1;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: -15px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: #000000cc; /* pak transparencë */
+  padding: 30px 20px;
+  border: 1.5px solid #0055ff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+}
+
+.service-card .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(25%) sepia(99%) saturate(700%) hue-rotate(185deg); /* blue icon effect */
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Butoni poshtë */
+.services-section button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.services-section button:hover {
+  background-color: white;
+  color: black;
+}
