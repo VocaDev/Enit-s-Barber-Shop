@@ -5,7 +5,7 @@ import Services from '../Services/Services';
 import Brands from '../Brands/Brands';
 import Klientet from '../Klientet/Klientet';
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <Navbar />
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;

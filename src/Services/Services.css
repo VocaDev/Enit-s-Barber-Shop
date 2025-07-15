@@ -15,8 +15,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.75); /* për të errësuar sfondin */
-  backdrop-filter: blur(8px); /* efekti i mjegullës */
+  background-color: rgba(0, 0, 0, 0.75); 
+  backdrop-filter: blur(8px); 
   z-index: -1;
 }
 
@@ -25,6 +25,8 @@
   font-weight: 600;
   margin-bottom: 60px;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .section-subtitle {

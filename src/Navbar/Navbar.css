@@ -1,22 +1,43 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 20px 8%;
-    color: white;
+/* === BASE NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px 16px;
+  color: white;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
 }
 
-.nav-links{
-    display: flex;
-    gap: 30px;
-    list-style: none;
+/* Logo */
+.navbar img {
+  height: 80px;
+  width: auto;
+  margin-left: 10px;
 }
 
-.nav-links a{
-    color: gray;
-    text-decoration: none;
-    font-weight: 100;
+/* ==== NAV LINKS (DESKTOP DEFAULT) ==== */
+.navbar .nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: gray;
+  text-decoration: none;
+  font-weight: 100;
 }
 
 .book-btn {
@@ -27,11 +48,48 @@
   cursor: pointer;
   background-color: black;
   font-weight: bold;
+  margin-right: 10px;
 }
 
-.hamburger{
-    background: none;
-    color: blue;
-    border: none;
-    font-size: 1.5rem;
+/* Hamburger icon (HIDDEN by default) */
+.hamburger {
+  background: none;
+  color: blue;
+  border: none;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* === MOBILE STYLES === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide nav links by default on mobile */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    padding: 0;
+    gap: 20px;
+    display: none;
+    align-items: center;
+  }
+
+  /* Show nav links when menu is open */
+  .nav-links.active {
+    display: flex;
+    padding: 20px 0;
+  }
+
+  .book-btn {
+    width: 80%;
+    text-align: center;
+  }
 }
